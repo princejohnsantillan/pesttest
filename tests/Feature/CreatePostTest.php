@@ -8,7 +8,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use function Pest\Laravel\assertDatabaseCount;
 use function Pest\Laravel\assertDatabaseHas;
 
-//covers(CreatePost::class);
+mutates(CreatePost::class);
 
 it('can create a post', function () {
     $user = User::factory()->create();
